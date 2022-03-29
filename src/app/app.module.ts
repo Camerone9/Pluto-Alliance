@@ -52,7 +52,7 @@ import { PaV1Component } from './components/pa-v1/pa-v1.component';
     FormsModule,
     HttpClientModule,
     AngularFireModule.initializeApp({
-      apiKey: "AIzaSyBmOLJAVq2CF9QMafzcLz1GyPt08BCftRM",
+      apiKey: "my-api-key",
       authDomain: "pluto-alliance.firebaseapp.com",
       projectId: "pluto-alliance",
       storageBucket: "pluto-alliance.appspot.com",

@@ -28,8 +28,8 @@ export class MetaMaskService {
   ) { }
 
   public signInWithMetaMask() {
-    const serverUrl = "https://hb0xn7gm38ob.usemoralis.com:2053/server";
-    const appId = "iVXTGUJquzaDwdkjlX4LRIxEmJZlbW3JOVaweaIf";
+    const serverUrl = "my-server";
+    const appId = "my-app-id";
     Moralis.start({ serverUrl, appId });
     let v1Ids = new Array<string>();
     let v2Ids = new Array<nft>();
