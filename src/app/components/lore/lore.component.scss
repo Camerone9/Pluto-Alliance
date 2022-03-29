@@ -1,0 +1,30 @@
+.mat-tab-label {
+    min-width: 120px !important;
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+}
+
+.mat-tab-body {
+    height: 100%;
+}
+
+.content {
+    margin-top: 50px;
+    color: white;
+    font-size: 24px;
+    height: 100%;
+    line-height: 28px;
+}
+
+@media (max-width: 600px) {
+    .content {
+        margin-top: 10px;
+        padding: 0 10px;
+        color: white;
+        font-size: 14px;
+        height: 100%;
+        line-height: 20px;
+    }
+}

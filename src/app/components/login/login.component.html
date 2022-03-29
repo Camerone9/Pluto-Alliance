@@ -1,0 +1,31 @@
+<div class="container" *ngIf="firebaseService.user$ | async as user; else login">
+    <!-- <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email">
+        <mat-error>Email Address is Required</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput formControlName="password">
+        <mat-error>Password is Required</mat-error>
+    </mat-form-field>
+    <button mat-stroked-button (click)="login()">Login</button> -->
+    <button class="button" mat-stroked-button (click)="logout()">Logout</button> 
+</div>
+<ng-template #login>
+    <div class="container">
+        <button class="button" mat-stroked-button (click)="loginGoogle()">
+            <img src="/assets/google.png">
+            Login With Google
+        </button>
+        <div class="or">-- Or --</div>
+        <button class="button" mat-stroked-button (click)="firebaseService.facebookSignin()">
+            <img src="/assets/facebook.png">
+            Login With Facebook
+        </button>
+        <div class="privacy">
+            <a href="https://www.freeprivacypolicy.com/live/7f74f477-181c-4e9c-a980-b34cd824e941">Privacy Policy</a>
+        </div>
+    </div>
+</ng-template>
+

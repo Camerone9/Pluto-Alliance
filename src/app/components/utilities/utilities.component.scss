@@ -1,0 +1,59 @@
+.container {
+    color: white;
+    font-size: 24px;
+}
+
+.content-rev-share {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mat-tab-label {
+    min-width: 120px !important;
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+}
+
+.info-cont {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    color: white;
+    max-width: 500px;
+    margin: 25px;
+}
+
+.months {
+    font-size: 14px;
+    color: #03EBDD;
+    display: flex;
+    justify-content: space-around;
+}
+
+.starship-img {
+    height: 500px;
+    margin: 0 0 10px 0;
+}
+
+@media (max-width: 600px) {
+    .info {
+        color: white;
+        max-width: 200px;
+    }
+
+    .bit-logo {
+        width: 100vw;
+    }
+}

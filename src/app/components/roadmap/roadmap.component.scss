@@ -1,0 +1,62 @@
+.container {
+    color: white;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.planet-container {
+    display: flex;
+    align-items: center;
+}
+
+.roadmap {
+    margin: 0 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.planet-img {
+    height: 200px;
+    width: 200px;
+}
+
+.name {
+    color: #03EBDD;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 48px;
+}
+
+.item {
+    font-size: 16px;
+}
+
+.complete {
+    text-decoration: line-through;
+    color: #666;
+}
+
+@media (max-width: 600px) {
+
+    .planet-container {
+        display: flex;
+        margin: 15px 0;
+    }
+
+    .planet-img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .name {
+        color: #03EBDD;
+        font-size: 24px;
+        text-transform: uppercase;
+        line-height: 30px;
+    }
+    
+    .item {
+        font-size: 13px;
+    }
+}

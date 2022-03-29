@@ -1,0 +1,67 @@
+.container {
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: calc(100vw - 500px);
+}
+
+.partner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    width: 300px;
+}
+
+.partner-image {
+    max-height: 100px;
+    max-width: 300px
+}
+
+.eth-name {
+    margin-top: 5px;
+    color: #EDEDED;
+    font-family: "Jost", Sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 3.9px;
+}
+
+.coin-name {
+    margin-top: 5px;
+    color: #ffd000;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 3.9px;
+}
+
+.dwf-name {
+    margin-top: 5px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 3.9px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        color: white;
+        background-color: #0b0425;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        width: 100vw;
+    }
+
+    .partner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 15px;
+        width: 350px;
+    }
+}

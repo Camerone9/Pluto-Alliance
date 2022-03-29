@@ -1,0 +1,12 @@
+<mat-card class="card card-container">
+    <div class="title">
+        Pluto Alliance
+    </div>
+    <mat-divider class="divider"></mat-divider>
+    <div class="routes">
+        <div class="route-button" [class.selected-route]="route.selected" *ngFor="let route of routes" (click)="routeClicked(route)">
+            <mat-icon class="icon">{{route.icon}}</mat-icon>
+            <div class="name">{{route.name}}</div>
+        </div>
+    </div>
+</mat-card>

@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.buy-card {
+    max-height: 500px;
+    background-color: #262729
+}
+
+.buy-card:hover {
+    cursor: pointer;
+}
+
+.img {
+    max-height: 400px
+}
+
+.buy {
+    color: rgb(104, 104, 255);
+}
+
+@media (max-width: 600px) {
+
+    .buy-card {
+        max-height: 300px;
+        background-color: #262729;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .buy-card:hover {
+        cursor: pointer;
+    }
+    
+    .img {
+        max-height: 150px
+    }
+    
+    .buy {
+        padding: 10px 0 0 0;
+        color: rgb(104, 104, 255);
+    }
+}

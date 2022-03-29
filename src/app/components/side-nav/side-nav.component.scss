@@ -1,0 +1,42 @@
+.card-container {
+    height: Calc(100% - 32px);
+}
+
+.title {
+    font-size: 26px ;
+    color: white;
+    text-align: center;
+    padding: 16px 16px 24px 16px;
+}
+
+.divider {
+    border-top-color: rgb(66, 66, 66);
+}
+
+.routes {
+    padding: 16px 0 0 0;
+}
+
+.route-button {
+    display: flex;
+    width: 150px;
+    background-color: #191B1F;
+    color: rgb(160, 160, 160);
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 14px;
+}
+
+.route-button:hover {
+    cursor: pointer;
+    background-color: #234664;
+}
+
+.selected-route {
+    background-color: #234664;
+}
+
+.icon {
+    margin: 0 10px 0 0;
+}

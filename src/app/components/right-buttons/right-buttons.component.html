@@ -1,0 +1,19 @@
+<div class="container">
+    <mat-card class="card-button" (click)="openTwitter()"> 
+        <img src="/assets/youtube_logo.png">
+    </mat-card>
+    <mat-card class="card-button" (click)="openTwitter()"> 
+        <img src="/assets/twitter_white.png">
+    </mat-card>
+    <mat-card class="card-button" (click)="openDiscord()">
+        <img src="/assets/discord_white.png">
+    </mat-card>
+    <div class="user-button" *ngIf="firebaseService.user$ | async as user; else notAuth" (click)="logoutPop()">
+        <img class="google-img" [src]="user.photoURL">
+    </div>
+    <ng-template #notAuth>
+        <mat-card class="card-button" (click)="logoutPop()">
+            Login
+        </mat-card>
+    </ng-template>
+</div>

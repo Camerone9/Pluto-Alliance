@@ -1,0 +1,139 @@
+.meta-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.meta-button {
+    margin: 10px;
+    width: 150px;
+    color: white;
+    border: 2px solid white !important;
+}
+
+.back-button {
+    margin: 10px;
+    width: 100px;
+    color: white;
+    border: 2px solid white !important;
+}
+
+.button-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.v1s {
+    margin: 5px;
+}
+
+.button-nft {
+    margin: 10px;
+    width: 100px;
+    color: white;
+    border: 2px solid white !important;
+    margin: 3px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.all {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.display-card {
+    padding: 5px;
+    width: 90%;
+    margin: 15px;
+    color: white;
+    background-color: rgb(36, 36, 36, 0);
+    border: 2px solid white;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.selected-nft-card {
+    width: 85%;
+    height: Calc(80vh - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-container {
+    height: 80%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.nft-id {
+    width: 100%;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.id {
+    margin: 10px;
+}
+
+.title-container {
+    padding: 10px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    overflow-y: auto;
+    height: Calc(50vh - 70px);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .all {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .display-card {
+        padding: 5px;
+        width: 90%;
+        margin: 5px;
+        color: white;
+        background-color: rgb(36, 36, 36, 0);
+        border: 2px solid white;
+        height: 33vh;
+        overflow: hidden;
+    }
+
+    .content {
+        overflow-y: auto;
+        height: Calc(33vh - 70px);
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

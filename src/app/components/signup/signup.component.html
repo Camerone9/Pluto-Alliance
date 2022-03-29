@@ -1,0 +1,12 @@
+<form class="form-container" [formGroup]="signUpForm">
+    <mat-form-field >
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email">
+        <mat-error>Valid Email Address is Required</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput formControlName="password">
+    </mat-form-field>
+    <button mat-stroked-button (click)="signUp()">Sign Up</button>
+</form>

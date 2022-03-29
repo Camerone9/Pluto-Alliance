@@ -1,0 +1,43 @@
+<div class="meta-container">
+    <button class="meta-button" mat-stroked-button (click)="metaMaskClick()">
+        <div class="button-content">
+            <img style="height: 20px;" src="/assets/metamask.svg"> 
+            <div>{{displayWalletAddress}}</div>
+        </div>
+    </button>
+    <div class="all" *ngIf="!isNftSelected">
+        <mat-card class="display-card">
+            <div class="title-container">
+                <div class="title">My V1's</div>
+                <div class="count">{{v1Nfts.length}}</div>
+            </div>
+            <div class="content">
+                <mat-spinner *ngIf="connecting"></mat-spinner>
+                <div class="v1s" *ngFor="let v1 of v1Nfts">
+                    <button class="button-nft" mat-stroked-button (click)="getSrcUrl(v1)"><div class="button-container">{{v1}}<mat-icon>visibility</mat-icon></div></button>
+                </div>
+            </div>
+        </mat-card>
+        <mat-card class="display-card">
+            <div class="title-container">
+                <div class="title">My V2's</div>
+                <div class="count">{{v2Nfts.length}}</div>
+            </div>
+            <div class="content">
+                <mat-spinner *ngIf="connecting"></mat-spinner>
+                <div class="v1s" *ngFor="let v1 of v2Nfts">
+                    <button class="button-nft" mat-stroked-button (click)="getV2Nft(v1)"><div class="button-container">{{v1.id}}<mat-icon>visibility</mat-icon></div></button>
+                </div>
+            </div>
+        </mat-card>
+    </div>
+    <div class="selected-nft-card" *ngIf="isNftSelected">
+        <div class="img-container">
+            <img [src]="selectedNft.url">
+        </div>
+        <div class="nft-id">
+            <div class="id">ID: {{selectedNft.id}}</div>
+            <button class="back-button" mat-stroked-button (click)="goBack()"><mat-icon>arrow_back</mat-icon> Back</button>
+        </div>
+    </div>
+</div>

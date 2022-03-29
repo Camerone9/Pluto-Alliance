@@ -1,0 +1,13 @@
+<mat-tab-group>
+    <mat-tab *ngFor="let tab of tabs" label="{{tab.tab}}">
+        <ng-template matTabContent>
+            <div class="content-latest">
+                <ngx-twitter-timeline
+                [source]="{sourceType: 'profile', screenName: tab.screenName }"
+                [options]="{height: '400', width: '400', theme: 'dark'}"
+                >
+                </ngx-twitter-timeline>
+            </div>
+        </ng-template>
+    </mat-tab>
+</mat-tab-group>

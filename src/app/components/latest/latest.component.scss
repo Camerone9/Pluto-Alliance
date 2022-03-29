@@ -1,0 +1,21 @@
+.content-latest {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.mat-tab-label {
+    min-width: 120px !important;
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    .content-latest {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+}
