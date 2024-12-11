@@ -31,6 +31,6 @@ export class RightButtonsComponent implements OnInit {
   }
 
   openDiscord() {
-    window.open('https://discord.com/invite/HVerHujDVc', '_blank')?.focus();
+    window.open('https://discord.gg/2aDRPuMBzG', '_blank')?.focus();
   }
 }
